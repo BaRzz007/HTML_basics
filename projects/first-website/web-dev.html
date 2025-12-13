@@ -12,6 +12,10 @@
             min-width: 500px;
             max-width: 900px;
         }
+        .article-image {
+            width: 300px;
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +56,7 @@
             <pre><code>&lt;&excl;-- --&gt;</code></pre>
             <p>tag defines a comment, which is used for documentation and has no effect to the page. The figure to the right depicts the tree dtructure defined by the nested tags in the HTML file.</p>
             <p>We call elements that enclose other elements parent elements and enclosed elements children elements. Obviously a child elements must be completely enclosed in its parent element, which means the tags must br properly nested. For instance, the following HTML fragment is closing to a browser because the two elemens are intermingled.</p>
-            <pre><code>&gt;em&lt; emphasized and &lt;bold&gt;bold-faced&lt;/em&gt;&lt;bold&gt;</code></pre>
+            <pre><code>&lt;em&gt; emphasized and &lt;bold&gt;bold-faced&lt;/em&gt;&lt;bold&gt;</code></pre>
             <p>We call elements block elements if they can contain other elements. For example, a paragraph &lpar;<code>&lt;p&gt;</code>&rpar; element and a list &lpar;<code>&lt;ul&gt;</code>&rpar; element are block elements and they usually occupy multiple lines on the page. All other elements are called inline elements. Some tags are self-closing. e.g the <code>&lt;br/&gt;</code> defines a linebreak, which is necessary because all space characters in HTML are ignored by browsers. Some tags allows us to define additional attribute for the elements, e.g <code>&lt;img src=&quot;MyPicture.jpg&quot;/&gt;</code> defines a image at location specified by the &quot;src&quot; attribute. Each attributes is a name and value pair with the value in double quotes. As you can see from this example, images are embedded into web pages by using the <code>&lt;img&gt;</code> tag that points to the images and the actual images are not part of the HTML file. This is an example of an external component, which also includes CSS and JavaScript files. Such external components must be downloaded seperately and incorporated into the web pages.</p>
             <p>The best way to learn HTML is to study examples and tweak them to meet your needs. Our goal is to be able to draw mental pictures of a page by looking at the HTML source file. In other words we want to understand the relationship between what we write in an HTML file and what will appear on the page so the pagr so that we can imagine and create web pages.</p>
         </section>
