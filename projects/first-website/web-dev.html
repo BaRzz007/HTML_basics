@@ -16,9 +16,10 @@
 </head>
 <body>
     <div id="main-page">
-        <hi>Web Programming with HTML</hi>
+        <h1>Web Programming with HTML</h1>
         <section>
             <h2>HTML</h2>
+            <hr>
             <ul>
                 <h3>Objectives</h3>
                 <li>Design and structure web pages using correct HTML tags, such as paragraph, heading, list, and image</li>
@@ -33,17 +34,95 @@
         </section>
         <section>
             <h2>What is HTML?</h2>
+            <hr>
             <p>HTML &lpar;HyperText Markup Language&rpar; is the standard language for defining web pages, which serve as the interface to your web applications. HTML files are plain-text files following the HTML syntax. A browser knows how to take an HTML file and display in a browser window the page defined by the html file. The file can be stored locally on the computer the browser is running on or fetched from a web server usinfg a URL. Creating HTML is coding because the result source code get executed by a browser, which is a virtual machine.</p>
         </section>
         <section>
             <h2>Tags Define the Page Structure</h2>
+            <hr>
             <p>An HTML file consists of content marked-up by tags as shown in this picture</p>
             <div class="article-image">
                 <img src="images/HTML.svg" alt="A picture of the HTML file structure">
                 <img src="images/DOM_tree.svg" alt="A picture of the DOM tree">
             </div>
             <p>The tag at the beginning of the file is special as it is used to indicate the standard the file is following <code>&lt;&excl;DOCTYPE html&gt;</code> means HTML5 - the latest standard, which some new features. You can copy and paste this tag to every HTML file you create.</p>
-            <p>Most tags appear in pairs - an opening and a closing tag. Each pair of tags defines an element for the web page, which can be visible. The visible elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For instance, the <code>&lt;html&gt;&lt;/html&gt;</code> defines the root &lpar;hightest level&rpar; element, whcih should enclose everything else in your HTML file. Inside the &quot;html&quot; elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For file. Inside the &quot;html&quot; element we have a &quot;head&quot; element and a &quot;body&quot; element defined by their corresponding tags. Inside &quot;head&quot; element is a &quot;title&quot; element and inside the &quot;body&quot; element is a &quot;paragraph&quot; element defined by the <code>&lt;p&gt;&lt;/p&gt;</code> tag pair.</p>
+            <p>Most tags appear in pairs - an opening and a closing tag. Each pair of tags defines an element for the web page, which can be visible. The visible elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For instance, the <code>&lt;html&gt;&lt;/html&gt;</code> defines the root &lpar;hightest level&rpar; element, whcih should enclose everything else in your HTML file. Inside the &quot;html&quot; elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For file. Inside the &quot;html&quot; element we have a &quot;head&quot; element and a &quot;body&quot; element defined by their corresponding tags. Inside &quot;head&quot; element is a &quot;title&quot; element and inside the &quot;body&quot; element is a &quot;paragraph&quot; element defined by the</p>
+            <pre><code>&lt;p&gt;&lt;/p&gt;</code></pre>
+            <p>tag pair. Both the &quot;title&quot; element and the &quot;paragraph&quot; element have text as their content. This type of nested structure resembles a tree. In fact, a browser always parse an HTML file first into a DOM object &lpar;a tree data structure&rpar; before it draws the page on the screen. Note that</p>
+            <pre><code>&lt;&excl;-- --&gt;</code></pre>
+            <p>tag defines a comment, which is used for documentation and has no effect to the page. The figure to the right depicts the tree dtructure defined by the nested tags in the HTML file.</p>
+            <p>We call elements that enclose other elements parent elements and enclosed elements children elements. Obviously a child elements must be completely enclosed in its parent element, which means the tags must br properly nested. For instance, the following HTML fragment is closing to a browser because the two elemens are intermingled.</p>
+            <pre><code>&gt;em&lt; emphasized and &lt;bold&gt;bold-faced&lt;/em&gt;&lt;bold&gt;</code></pre>
+            <p>We call elements block elements if they can contain other elements. For example, a paragraph &lpar;<code>&lt;p&gt;</code>&rpar; element and a list &lpar;<code>&lt;ul&gt;</code>&rpar; element are block elements and they usually occupy multiple lines on the page. All other elements are called inline elements. Some tags are self-closing. e.g the <code>&lt;br/&gt;</code> defines a linebreak, which is necessary because all space characters in HTML are ignored by browsers. Some tags allows us to define additional attribute for the elements, e.g <code>&lt;img src=&quot;MyPicture.jpg&quot;/&gt;</code> defines a image at location specified by the &quot;src&quot; attribute. Each attributes is a name and value pair with the value in double quotes. As you can see from this example, images are embedded into web pages by using the <code>&lt;img&gt;</code> tag that points to the images and the actual images are not part of the HTML file. This is an example of an external component, which also includes CSS and JavaScript files. Such external components must be downloaded seperately and incorporated into the web pages.</p>
+            <p>The best way to learn HTML is to study examples and tweak them to meet your needs. Our goal is to be able to draw mental pictures of a page by looking at the HTML source file. In other words we want to understand the relationship between what we write in an HTML file and what will appear on the page so the pagr so that we can imagine and create web pages.</p>
+        </section>
+        <section>
+            <h2>Essential Tags</h2>
+            <hr>
+            <p>You can find a comprehensive list of HTML tags W3C schools. More specifically you need to know how to use the following tags <br/>&lpar;click on a tag to see a description and example use of the tag&rpar;</p>
+            <ul>
+                <li><a href="http://www.w3schools.com/tags/tag_doctype.asp">&lt;&excl;DOCTYPE html&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_audio.asp">&lt;audio&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_abbr.asp">&lt;abbr&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_body.asp">&lt;body&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_br.asp">&lt;br&gt;</a></li>
+                <li>
+                    <a href="http://www.w3schools.com/tags/tag_dl.asp">&lt;dl&gt;</a>
+                    <ul>
+                        <li><a href="http://www.w3schools.com/tags/tag_dt.asp">&lt;dt&gt;</a></li>
+                        <li><a href="http://www.w3schools.com/tags/tag_dd.asp">&lt;dd&gt;</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.w3schools.com/tags/tag_em.asp">&lt;em&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_head.asp">&lt;head&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_hn.asp">&lt;h1&gt;-&lt;h6&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_hr.asp">&lt;hr&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_html.asp">&lt;html&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_ol.asp">&lt;ol&gt;</a></li>
+                <li>
+                    <a href="http://www.w3schools.com/tags/tag_ul.asp">&lt;ul&gt;</a>
+                    <ul>
+                        <li><a href="http://www.w3schools.com/tags/tag_li.asp">&lt;li&gt;</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_p.asp">&lt;p&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_q.asp">&lt;q&gt;</a></li>
+                <li><a href="http://www.w3schools.com/tags/tag_style.asp">&lt;style&gt;</a></li>
+                <li>
+                    <a href="http://www.w3schools.com/tags/tag_table.asp">&lt;table&gt;</a>
+                    <ul>
+                        <li><a href="http://www.w3schools.com/tags/tag_tr.asp">&lt;tr&gt;</a></li>
+                        <li><a href="http://www.w3schools.com/tags/tag_th.asp">&lt;th&gt;</a></li>
+                        <li><a href="http://www.w3schools.com/tags/tag_td.asp">&lt;td&gt;</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.w3schools.com/tags/tag_video.asp">&lt;video&gt;</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Meta Tags</h2>
+            <hr>
+            <p>In the head element a number of meta tage can be used to provide information about HTML document as shown in <a href="https://www.w3schools.com/TAgs/tag_meta.asp">this example</a>.</p>
+            <p>The meta tag with &quot;charset&quot; attribute is required. The attribute is commonly set to &quot;utf-8&quot; as shown <a href="https://www.w3schools.com/html/html_charset.asp"></a>.</p>
+        </section>
+        <section>
+            <h2>HTML5 Semantics</h2>
+            <hr>
+            <p>HTML5 introduces a number of semantic elements to help search engines or the programs better identify the structure of a web page.</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/tags/tag_header.asp">&lt;header&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_section.asp">&lt;section&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_article.asp">&lt;article&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_nav.asp">&lt;nav&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_aside.asp">&lt;aside&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_footer.asp">&lt;footer&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_time.asp">&lt;time&gt;</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_figure.asp">&lt;figure&gt;</a></li>
+            </ul>
         </section>
     </div>
 </body>
