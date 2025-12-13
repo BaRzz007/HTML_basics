@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development with HTML</title>
+    <style>
+        #main-page {
+            margin-left: 20%;
+            margin-right: 20%;
+            min-height: 100vh;
+            min-width: 500px;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-page">
+        <hi>Web Programming with HTML</hi>
+        <section>
+            <h2>HTML</h2>
+            <ul>
+                <h3>Objectives</h3>
+                <li>Design and structure web pages using correct HTML tags, such as paragraph, heading, list, and image</li>
+                <li>Draw a page by tracing its HTML source code</li>
+            </ul>
+            <ul>
+                <h3>Resources</h3>
+                <li>Slides for chapter 2</li>
+                <li>HTML tag reference</li>
+                <li>a short wikibook on HTML</li>
+            </ul>
+        </section>
+        <section>
+            <h2>What is HTML?</h2>
+            <p>HTML &lpar;HyperText Markup Language&rpar; is the standard language for defining web pages, which serve as the interface to your web applications. HTML files are plain-text files following the HTML syntax. A browser knows how to take an HTML file and display in a browser window the page defined by the html file. The file can be stored locally on the computer the browser is running on or fetched from a web server usinfg a URL. Creating HTML is coding because the result source code get executed by a browser, which is a virtual machine.</p>
+        </section>
+        <section>
+            <h2>Tags Define the Page Structure</h2>
+            <p>An HTML file consists of content marked-up by tags as shown in this picture</p>
+            <div class="article-image">
+                <img src="images/HTML.svg" alt="A picture of the HTML file structure">
+                <img src="images/DOM_tree.svg" alt="A picture of the DOM tree">
+            </div>
+            <p>The tag at the beginning of the file is special as it is used to indicate the standard the file is following <code>&lt;&excl;DOCTYPE html&gt;</code> means HTML5 - the latest standard, which some new features. You can copy and paste this tag to every HTML file you create.</p>
+            <p>Most tags appear in pairs - an opening and a closing tag. Each pair of tags defines an element for the web page, which can be visible. The visible elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For instance, the <code>&lt;html&gt;&lt;/html&gt;</code> defines the root &lpar;hightest level&rpar; element, whcih should enclose everything else in your HTML file. Inside the &quot;html&quot; elements are like boxes. All boxes hold some content and some boxes can contain other boxes. For file. Inside the &quot;html&quot; element we have a &quot;head&quot; element and a &quot;body&quot; element defined by their corresponding tags. Inside &quot;head&quot; element is a &quot;title&quot; element and inside the &quot;body&quot; element is a &quot;paragraph&quot; element defined by the <code>&lt;p&gt;&lt;/p&gt;</code> tag pair.</p>
+        </section>
+    </div>
+</body>
+</html>
