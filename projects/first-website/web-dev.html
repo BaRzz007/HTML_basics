@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development with HTML</title>
-    <style>
-        #main-page {
-            width: 70%;
-            min-height: 100vh;
-            max-width: 900px;
-            margin: auto;
-        }
-        .article-image {
-            width: 300px;
-            display: flex;
-        }
-    </style>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sekuya&display=swap">
     <link rel="stylesheet" href="styles/index.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #main-page {
+            width: 70%;
+            min-height: 100vh;
+            min-width: 550px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .article-image {
+            width: 300px;
+            display: flex;
+        }
+
+        #page-header {
+            min-height: 50vh;
+            max-height: 50vh;
+            margin-bottom: 10px;
+        }
+
+        #header-top {
+            min-height: 50px;
+        }
+
+        #header-main {
+            min-height: inherit;
+        }
+    </style>
 </head>
 <body>
+    <header id="page-header">
+        <div id="header-top" class="black"></div>
+        <div id="header-main" class="burlywood"></div>
+    </header>
     <main id="main-page">
         <h1 class="sekuya-regular">Web Programming with HTML</h1>
         <section>
