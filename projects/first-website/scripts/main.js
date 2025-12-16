@@ -1,6 +1,6 @@
 const headerTop = document.querySelector("#header-top");
 const headerMain = document.querySelector("#header-main");
-const mainHeader = document.querySelector("h1");
+const mainHeading = document.querySelector("h1");
 mainHeading.style.color = window.getComputedStyle(document.querySelector("#header-main"))["backgroundColor"];
 
 function switchColor() {
