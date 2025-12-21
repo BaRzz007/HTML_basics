@@ -43,4 +43,10 @@ div {
 
 section {
   position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+button {
+  padding: 10px 20px;
 }
