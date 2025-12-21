@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cyan;
+}
+
+div {
+  min-height: 100vh;
+}
+
+.linear {
+  display: none;
+  /* linear-gradient(to top, #e80097,  #e85100)
+  linear-gradient(to bottom, #e80097,  #e85100)
+  linear-gradient(to left, #e80097,  #e85100)
+  linear-gradient(to right, #e80097,  #e85100)
+  linear-gradient(to top right, #e80097,  #e85100)
+  linear-gradient(to bottom left, #e80097,  #e85100)*/
+  background-image: linear-gradient(50deg, #e80097,  #e85100);
+}
+
+.radial {
+  display: none;
+  /* radial-gradient(shape size at position, start-oolor [%-spacing], ..., last-color[%-spacing])*/
+  /* radial-gradient(color-stop-1, color-stop-2...color-stop-n)*/
+  /* radial-gradient(#FDB5CE 10%, #3B9797 35%, #16476A 60%);*/
+  background-image: radial-gradient(circle farthest-corner at 90% 10%, #FDB5CE, #3B9797, #16476A);
+}
+
+.conical {
+  display: none;
+  /* conic-gradient([start-angle] [at x-% y-%], start-color [degree], ..., end-color [degree]) */
+  /*background-image: conic-gradient(#050E3C, #FF3838, #DC0000, #002455, #050E3C);*/
+  background-image: conic-gradient(from 210deg at 30% 50% , #050E3C, #FF3838, lime, #050E3C);
+}
+
+.active {
+  display: block;
+}
+
+section {
+  position: absolute;
+}
