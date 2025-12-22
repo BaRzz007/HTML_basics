@@ -10,4 +10,4 @@ buttons.forEach((btn) => {
         div.classList.remove("active");
     });
   });
-})
+});

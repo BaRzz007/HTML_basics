@@ -32,8 +32,9 @@ div {
 
 .conical {
   display: none;
-  /* conic-gradient([start-angle] [at x-% y-%], start-color [degree], ..., end-color [degree]) */
-  /*background-image: conic-gradient(#050E3C, #FF3838, #DC0000, #002455, #050E3C);*/
+  /* conic-gradient([from start-angle] [at x-% y-%], start-color [degree], ..., end-color [degree]) */
+  /* conic-gradient(#050E3C, #FF3838, #DC0000, #002455, #050E3C); */
+  /* conic-gradient(#050E3C 0deg, #050E3C 115deg, #FF3838 115deg, #FF3838 180deg, lime 180deg, lime 315deg, #050E3C 270deg); with defined degrees */
   background-image: conic-gradient(from 210deg at 30% 50% , #050E3C, #FF3838, lime, #050E3C);
 }
 
