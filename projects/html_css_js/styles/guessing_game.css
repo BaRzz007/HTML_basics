@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#game {
+    margin: 4vh auto;
+    max-width: 30vw;
+    min-width: 350px;
+    min-height: 360px;
+    background-color: #ededed;
+    padding: 30px;
+    border: 2px solid #a8a8a8;
+    border-radius: 3%;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+button {
+    padding: 3px;
+}
+
+input {
+    padding: 3px;
+}
+
+.guess-list {
+    display: flex;
+    margin: 10px 0;
+}
+
+#guess-list {
+    margin: 0;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+    padding: 2px;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+    padding: 2px;
+}
+
+
+#guess-list > li {
+    margin: 0 5px;
+    list-style: none;
+}
